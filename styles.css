@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #111;
 }
 .sidebar {
     position: fixed;
@@ -35,22 +35,31 @@ body {
     padding: 0.625rem 0;
 }
 
+.sidebar ul li:hover {
+    background-color: #1FDF64;
+    border-radius: 10px;
+}
+
 .sidebar nav ul li a {
-    color: #b3b3b3;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1rem;
     font-family: "DM Sans", sans-serif;
 }
 
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
 .library {
-    background-color: #121212;
+    background-color: #1FDF64;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 4px 8px;
-    color: #b3b3b3;
+    color: #111111;
     font-weight: 600;
     font-size: 14px;
     margin-top: 0.625rem;
@@ -64,7 +73,7 @@ body {
 .library .library__button {
     display: flex;
     margin-right: 0.625rem;
-    color: #b3b3b3;
+    color: #111111;
     background-color: transparent;
     border: 0px;
     font-size: 14px;
@@ -85,6 +94,33 @@ body {
 
 .library .library__content .fa-plus {
     margin: 24px 10px;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist {
@@ -124,8 +160,8 @@ body {
 .section-playlist__content .section-playlist__button {
     display: flex;
     justify-content: center;
-    background-color: #fff;
-    color: #000;
+    background-color: #1FDF64;
+    color: #111;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
@@ -136,6 +172,11 @@ body {
     margin-top: 12px;
     border: 0px;
     width: 113px;
+    cursor: pointer;
+}
+
+.section-playlist__content .section-playlist__button:hover {
+    text-decoration: underline;
 }
 
 .sidebar .cookies {
@@ -143,10 +184,11 @@ body {
 }
 
 .sidebar .cookies a {
-    color: #b3b3b3;
+    color: #111;
     font-weight: 500;
     font-size: 10px;
     text-decoration: none;
+    font-family: "DM Sans", sans-serif;
 }
 
 .sidebar .cookies a:hover {
@@ -156,7 +198,7 @@ body {
 .languages .languages__button {
     align-items: center;
     background-color: transparent;
-    border: 1px solid #878787;
+    border: 1px solid #111;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
@@ -164,4 +206,46 @@ body {
     margin: 8px;
     padding: 8px;
     border-radius: 20px;
+}
+
+.languages .languages__button:hover {
+    text-decoration: underline;
+}
+
+.footer-area {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #1fdf64, #ffffff);
+    font-family: "DM Sans", sans-serif;
+    line-height: 25px;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 96%;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer__button {
+    background-color: #111;
+    color: #fff;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    padding: 1rem;
+    border: 0px;
+    width: auto;
+    cursor: pointer;
+}
+
+.footer__button span {
+    padding: 1rem;
+}
+
+.footer__button:hover {
+    text-decoration: underline;
 }
