@@ -1,5 +1,6 @@
 body {
     background-color: #111;
+    font-family: var(--font-dm-sans);
 }
 .sidebar {
     position: fixed;
@@ -45,7 +46,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    font-family: "DM Sans", sans-serif;
 }
 
 .sidebar nav ul li a:hover {
@@ -78,7 +78,6 @@ body {
     border: 0px;
     font-size: 14px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -120,7 +119,6 @@ body {
 
 .tooltip:hover .tooltip-text {
     visibility: visible;
-    font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist {
@@ -145,7 +143,6 @@ body {
 .section-playlist__content .text {
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist__content .title {
@@ -165,7 +162,6 @@ body {
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -188,7 +184,6 @@ body {
     font-weight: 500;
     font-size: 10px;
     text-decoration: none;
-    font-family: "DM Sans", sans-serif;
 }
 
 .sidebar .cookies a:hover {
@@ -216,7 +211,6 @@ body {
     display: flex;
     justify-content: space-between;
     background: linear-gradient(to right, #1fdf64, #ffffff);
-    font-family: "DM Sans", sans-serif;
     line-height: 25px;
     position: fixed;
     bottom: 1rem;
@@ -233,7 +227,6 @@ body {
     border-radius: 3rem;
     font-size: 1rem;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 1rem;
