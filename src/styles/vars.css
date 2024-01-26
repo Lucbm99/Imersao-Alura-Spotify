@@ -3,10 +3,12 @@
     --text-base-dark: #000;
     --text-base-light: #fff;
     --text-sub: #a7a7a7;
+    --text-artist: #6a6a6a;
     
     --green: #1FDF64;
     --bg-sidebar: #121212;
     --bg-icon: #131313;
+    --bg-cards: #08205F;
     --bg-arrow-color: rgba(0,0,07);
     --bg-top-bar: #61616142;
     --bg-search: #242424
@@ -26,9 +28,6 @@
     --card10: rgb(233, 20, 41);
     --card11: rgb(80, 55, 80);
     --card12: rgb(216, 64, 0);
-    --card13: rgb(186, 93, 7);
-    --card14: rgb(0, 30, 80);
-    --card15: rgb(60, 30, 80);
 
     /* Fonts */
     --font-dm-sans: "DM Sans", sans-serif;
